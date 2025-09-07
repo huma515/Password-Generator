@@ -4,17 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator | JavaScript Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
 <h1>Password Generator</h1>
-in
+<div class="inpBox">
+<input type="text" name="text" id="passBox" disabled> 
 
+</div>
+<input type="range" min="1" max="30" value="8" id="range">
+<div class="paslen">
+<p>Password Length</p>
+<span>8</span>
+</div>
 
+<div class="row">
+<label for="lower">Include Lowercase Letters (a-z)</label>
+<input type="checkbox" id="lower" checked> 
+</div>
 
+<div class="row">
+<label for="upar">Include Uparcase Letters (A-Z)</label>
+<input type="checkbox" id="upar"checked> 
+</div>
 
+<div class="row">
+<label for="num">Include Numbers (0-9)</label>
+<input type="checkbox" id="num" checked> 
+</div>
 
+<div class="row">
+<label for="sym">Include Symbols (!$@#)</label>
+<input type="checkbox" id="sym" checked>
+</div>
 
+<button class="btn" onclick="genPass()">Generator Password</button>
     </div>
 
 
